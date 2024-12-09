@@ -219,5 +219,5 @@ elif (sys.argv[1] == '--s'):
 		serverStart()
 		# valid call to start server
 
-else: print('Error: unrecognized argument(s)\nUsage: unencryptedim.py --s| --c hostname')
+else: print('Error: unrecognized argument(s)\nUsage (strict order): python3 encryptedim.py [--s|--c hostname] [--confkey K1] [--authkey K2]')
 
