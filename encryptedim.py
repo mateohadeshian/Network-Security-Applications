@@ -1,3 +1,10 @@
+# An instant messenger program encrypts messages using AES-256 in CBC mode with randomly generated initialization 
+# vectors and an HMAC with SHA256 for message authentication. 
+# Program uses an encrypt-then-MAC scheme to send the message. 
+# The program is dependent on a pre-shared secret for encryption (one time pad). Messages are sent over a network.
+
+# Usage (strict order): python3 encryptedim.py [--s|--c hostname] [--confkey K1] [--authkey K2]
+
 import argparse
 import select
 import socket
